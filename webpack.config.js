@@ -21,6 +21,11 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components',
+      './app/api'
+    ],
     alias: {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx',
@@ -29,7 +34,10 @@ module.exports = {
       examples: 'app/components/examples.jsx',
       WeatherForm: 'app/components/WeatherForm.jsx',
       WeatherMessage: 'app/components/WeatherMessage.jsx',
-      openweathermap: 'app/api/openWeatherMapOrg.jsx'
+      openweathermap: 'app/api/openWeatherMapOrg.jsx',
+      ErrorModal: 'app/components/ErrorModal.jsx',
+      applicationStyle: 'app/styles/app.scss',
+      actions: 'app/actions/actions.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
