@@ -8,7 +8,7 @@ var AddTodo = React.createClass({
     var {dispatch} = this.props;
     var text = this.refs.addTodo.value;
     if(text!==''){
-      this.props.onAddTodo(text);
+      this.refs.addTodo.value = '';
       dispatch(actions.addTodo(text));
     }
     else{

@@ -8,8 +8,8 @@ var TodoSearch = React.createClass({
     return (
       <div className="container_header">
         <div>
-          <input type="search" ref="searchText" placeholder="Search todos" value={searchText} onChange={()=>{
-              var searchText = this.refs.searchText;
+          <input type="search" ref="searchText" placeholder="Search todos" onChange={()=>{
+              var searchText = this.refs.searchText.value;
                 dispatch(actions.setSearchText(searchText));
             }}/>
         </div>
