@@ -30,16 +30,7 @@ firebaseRef.child('App/name').update({
 
 var todosRef = firebaseRef.child('todos');
 
-todosRef.on('child_changed', (snapshot)=>{
-  console.log('child_changed', snapshot.key, snapshot.val());
-});
-
 var newtodosRef = todosRef.push({
   text: 'Walk the dog!'
 });
-
-var newtodosRef = todosRef.push({
-  text: 'Todo 2'
-});
-
 console.log('Todo id', newtodosRef.key);
