@@ -20,7 +20,8 @@ export var Login = React.createClass({
                 Login with GitHub account below.
               </p>
               <button onClick={this.onLogin} className="buttton" style={{padding:'8px',
-                borderRadius:'2px',backgroundColor:'#0288D1'}}>Login with GitHub</button>
+                borderRadius:'2px',backgroundColor:'#0288D1',
+                color:'white'}}>Login with GitHub</button>
             </div>
           </div>
         </div>
