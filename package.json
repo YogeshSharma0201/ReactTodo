@@ -27,6 +27,7 @@
     "expect": "^1.14.0",
     "foundation-sites": "^6.2.0",
     "jquery": "^2.2.1",
+    "moment": "^2.18.1",
     "node-sass": "^3.4.2",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
