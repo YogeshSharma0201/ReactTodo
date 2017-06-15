@@ -89,6 +89,12 @@ export var logout = ()=>{
   };
 };
 
+export var wipeTodos = ()=>{
+  return {
+    type: 'WIPE_TODOS'
+  };
+};
+
 export var startToggleTodo = (id, completed)=>{
   return (dispatch, getState)=>{
     var uid = getState().auth.uid;

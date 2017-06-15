@@ -59,6 +59,8 @@ export var todosReducer = (state=[], action)=> {
        ...state,
        ...action.todos
      ];
+    case 'WIPE_TODOS':
+      return [];
     default:
       return state;
   }

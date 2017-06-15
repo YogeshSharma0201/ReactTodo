@@ -10,7 +10,7 @@ var TodoApp = React.createClass({
   onLogout: function(e){
     var  {dispatch} = this.props;
     e.preventDefault();
-
+    dispatch(actions.wipeTodos());
     dispatch(actions.startLogout());
   },
   render: function(){
