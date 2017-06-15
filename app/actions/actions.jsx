@@ -74,6 +74,19 @@ export var updateTodo = (id, updates)=> {
   };
 };
 
+export var login = (uid)=>{
+  return {
+    type: 'LOGIN',
+    uid
+  };
+};
+
+export var logout = ()=>{
+  return {
+    type: 'LOGOUT'
+  };
+};
+
 export var startToggleTodo = (id, completed)=>{
   return (dispatch, getState)=>{
     var todoRef = firebaseRef.child(`todos/${id}`);
